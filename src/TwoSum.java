@@ -49,3 +49,19 @@ public class TwoSum {
         System.out.println(Arrays.toString(test.twoSum(arr, target)));
     }
 }
+
+/*
+Explanation:
+This is brute-force solution, so it is bad at timing.
+
+- we are given array of integers, so we should add them up one by one,
+  so I used nested for loop.
+
+- How nested for loop is working here:
+    in the first loop it takes i value as 0 and j value as i+1 = 1
+    and it is equal to nums[0] = 2 and nums[1] = 7 in the first iteration.
+
+- after that if statement checks the sum with that indexes, now it is matching
+  with target so it breaks the loop and returns indexes
+
+ */
